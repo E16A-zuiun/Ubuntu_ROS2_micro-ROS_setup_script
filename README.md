@@ -8,7 +8,7 @@ WSLのUbuntu-22.04ディストリビューションでも動作します.
 ## 使用方法
 setup.bashが存在するディレクトリに移動します.
 ```
-cd Ubuntu-ROS2-micro-ROS_setup_script
+cd Ubuntu_ROS2_micro-ROS_setup_script
 ```
 このコマンドを実行して権限を設定してください.
 ```

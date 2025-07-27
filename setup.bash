@@ -87,7 +87,7 @@ if ! grep -q "source $HOME/microros_ws/install/local_setup.bash" ~/.bashrc; then
 fi
 source install/local_setup.bash
 echo "[7/8] ファームウェアとAgentのワークスペースを作成・ビルドしています..."
-ros2 run micro_ros_setup create_firmware_ws.sh
+ros2 run micro_ros_setup create_firmware_ws.sh freertos esp32
 ros2 run micro_ros_setup build_firmware.sh
 source install/local_setup.bash
 ros2 run micro_ros_setup create_agent_ws.sh

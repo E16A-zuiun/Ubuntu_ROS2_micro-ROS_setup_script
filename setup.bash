@@ -92,11 +92,9 @@ ros2 run micro_ros_setup build_firmware.sh
 source install/local_setup.bash
 ros2 run micro_ros_setup create_agent_ws.sh
 source install/local_setup.bash
-echo "[8/8] デフォルトのRMW実装を~/.bashrcにインストール・設定しています..."
+echo "[8/8] デフォルトのRMW実装をインストールしています..."
 sudo apt install --reinstall ros-humble-rmw-fastrtps-cpp ros-humble-fastrtps
-if ! grep -q "export RMW_IMPLEMENTATION=rmw_microxrcedds" ~/.bashrc; then
-  echo 'export RMW_IMPLEMENTATION=rmw_microxrcedds' >> ~/.bashrc
-fi
+
 
 echo ""
 echo "--- 全てのセットアップが完了しました！ ---"

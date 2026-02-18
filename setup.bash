@@ -92,8 +92,6 @@ ros2 run micro_ros_setup build_firmware.sh
 source install/local_setup.bash
 ros2 run micro_ros_setup create_agent_ws.sh
 source install/local_setup.bash
-echo "[8/8] デフォルトのRMW実装をインストールしています..."
-sudo apt install --reinstall ros-humble-rmw-fastrtps-cpp ros-humble-fastrtps
 
 
 echo ""
